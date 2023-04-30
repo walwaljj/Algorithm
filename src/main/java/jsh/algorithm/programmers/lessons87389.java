@@ -10,11 +10,7 @@ public class lessons87389 {
                 break;
             }
         }
-
         return answer;
     }
-    public static void main(String[] args) {
-        lessons87389 lessons = new lessons87389();
-        lessons.solution(10);
-    }
+
 }

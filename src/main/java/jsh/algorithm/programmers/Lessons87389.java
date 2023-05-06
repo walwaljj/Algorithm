@@ -1,6 +1,6 @@
 package jsh.algorithm.programmers;
 
-public class lessons87389 {
+public class Lessons87389 {
 
     public int solution(int n) {
         int answer = 0;

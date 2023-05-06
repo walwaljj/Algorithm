@@ -2,7 +2,7 @@ package jsh.algorithm.programmers;
 
 import java.util.Arrays;
 
-public class lessons12910 {
+public class Lessons12910 {
 
     public int[] solution(int[] arr, int divisor) {
 
@@ -32,7 +32,7 @@ public class lessons12910 {
     }
     public static void main(String[] args) {
         int[] numbers = {3,2,6};
-        lessons12910 lessons = new lessons12910();
+        Lessons12910 lessons = new Lessons12910();
 
         System.out.println(Arrays.toString(lessons.solution(numbers, 	10)));
     }

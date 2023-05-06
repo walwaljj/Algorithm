@@ -1,6 +1,6 @@
 package jsh.algorithm.programmers;
 
-public class lessons12947 {
+public class Lessons12947 {
     public boolean solution(int x) {
 
         int div = 0;

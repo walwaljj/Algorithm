@@ -3,7 +3,7 @@ package jsh.algorithm.programmers;
 import java.util.Arrays;
 import java.util.Collections;
 
-public class lessons138477 {
+public class Lessons138477 {
 
     public int[] solution(int k, int[] score) {
         Integer[] daily = {};

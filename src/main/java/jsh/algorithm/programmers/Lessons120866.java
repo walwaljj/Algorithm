@@ -1,14 +1,6 @@
 package jsh.algorithm.programmers;
 
 public class Lessons120866 {
-    public static void main(String[] args) {
-
-        Lessons120866 result = new Lessons120866();
-//        int[][] board = {{0, 0, 0, 0, 0}, {0, 0, 0, 0, 0},{0, 0, 0, 0, 0},{0, 0, 1, 0, 1}, {0, 0, 0, 0, 0}};
-        int[][] board = {{1, 1, 1, 1, 1, 1}, {1, 1, 1, 1, 1, 1}, {1, 1, 1, 1, 1, 1}, {1, 1, 1, 1, 1, 1}, {1, 1, 1, 1, 1, 1},{1, 1, 1, 1, 1, 1}};
-
-        result.solution(board);
-    }
 
     public int solution(int[][] board) {
         int answer = board.length * board.length;

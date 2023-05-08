@@ -1,4 +1,4 @@
-package jsh.algorithm.programmers;
+package jsh.algorithm.programmers.lv2;
 
 public class Lessons70129 {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package jsh.algorithm.programmers;
+package jsh.algorithm.programmers.lv1;
 
 import java.util.Arrays;
 import java.util.Collections;

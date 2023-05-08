@@ -1,4 +1,4 @@
-package jsh.algorithm.programmers;
+package jsh.algorithm.programmers.lv1;
 
 public class Lessons12947 {
     public boolean solution(int x) {

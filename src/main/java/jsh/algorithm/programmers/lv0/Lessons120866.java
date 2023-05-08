@@ -1,4 +1,4 @@
-package jsh.algorithm.programmers;
+package jsh.algorithm.programmers.lv0;
 
 public class Lessons120866 {
 

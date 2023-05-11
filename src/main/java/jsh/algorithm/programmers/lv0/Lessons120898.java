@@ -1,4 +1,4 @@
-ㅏpackage jsh.algorithm.programmers.lv0;
+package jsh.algorithm.programmers.lv0;
 
 public class Lessons120898 {
     public int solution(String message) {

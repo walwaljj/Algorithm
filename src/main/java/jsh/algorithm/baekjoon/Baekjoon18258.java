@@ -6,7 +6,6 @@ import java.util.LinkedList;
 /**
  * https://www.acmicpc.net/problem/18258
  * 큐 2
- *
  */
 public class Baekjoon18258 {
     public static void main(String[] args) throws IOException {

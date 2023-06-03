@@ -6,7 +6,7 @@ import java.util.List;
 
 /**
  * https://www.acmicpc.net/problem/18258
- * 큐 2
+ * 큐 2  
  *
  */
 public class Baekjoon18258_2 {

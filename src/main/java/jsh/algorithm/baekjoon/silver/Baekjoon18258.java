@@ -1,4 +1,4 @@
-package jsh.algorithm.baekjoon;
+package jsh.algorithm.baekjoon.silver;
 
 import java.io.*;
 import java.util.LinkedList;

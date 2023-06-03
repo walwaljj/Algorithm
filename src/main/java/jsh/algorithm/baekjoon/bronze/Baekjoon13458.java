@@ -1,4 +1,4 @@
-package jsh.algorithm.baekjoon;
+package jsh.algorithm.baekjoon.bronze;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

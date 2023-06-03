@@ -1,4 +1,4 @@
-package jsh.algorithm.baekjoon;
+package jsh.algorithm.baekjoon.bronze;
 
 import java.util.Arrays;
 import java.util.Scanner;

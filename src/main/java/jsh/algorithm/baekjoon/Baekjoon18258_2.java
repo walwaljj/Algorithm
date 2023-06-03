@@ -16,12 +16,10 @@ public class Baekjoon18258_2 {
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
         List<Integer> list = new ArrayList<>();
         String command = "";
-        int cnt = 0;
         for (int i = 0; i < Integer.parseInt(br.readLine()); i++) {
             command = br.readLine();
             if(command.contains("push")){
                 list.add(Integer.parseInt(command.split(" ")[1]));
-                cnt++;
             } else if (command.contains("front")) {
                 if(list.size() != 0){
                     bw.write(list.get(0)+"\n");

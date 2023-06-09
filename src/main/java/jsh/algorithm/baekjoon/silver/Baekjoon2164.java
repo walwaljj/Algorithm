@@ -6,7 +6,7 @@ package jsh.algorithm.baekjoon.silver;
 
 import java.util.*;
 
-public class Backjoon2164 {
+public class Baekjoon2164 {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);

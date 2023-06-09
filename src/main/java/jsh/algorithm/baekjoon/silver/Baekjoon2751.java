@@ -8,7 +8,7 @@ import java.util.Arrays;
 /**https://www.acmicpc.net/problem/2751
  * 수 정렬하기2
  */
-public class Backjoon2751 {
+public class Baekjoon2751 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringBuilder sb = new StringBuilder();

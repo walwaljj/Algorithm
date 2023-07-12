@@ -1,8 +1,6 @@
 package jsh.algorithm.programmers.lv0;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 //https://school.programmers.co.kr/learn/courses/30/lessons/181859
 public class Lessons181859 {
@@ -22,31 +20,20 @@ stk에 원소가 있는데 stk의 마지막 원소가 arr[i]와 다르면 stk의
  */
     public int[] solution(int[] arr) {
 
-        List<Integer> list = new ArrayList<>();
+        LinkedList<Integer> list = new LinkedList<>();
         Integer lastNum = null;
 
         for(int i = 0 ; i < arr.length ; i++){
 
-            if(!list.isEmpty()) lastNum = list.get(list.size() - 1);
+            if( !list.isEmpty() ) lastNum = list.getLast();
 
-            if( list.isEmpty() || lastNum.equals(arr[i])){
-                list.add(arr[i]);
-            }else {
-                list.remove(list.size() - 1);
-            }
+            if( list.isEmpty() || !lastNum.equals(arr[i])) list.add(arr[i]);
 
+            else list.removeLast();
         }
 
-        if(list.size() == 0){
-            return new int[]{-1};
-        }
+        if( list.size() == 0 ) { return new int[]{-1}; }
 
-        int[] answer = new int[list.size()];
-
-        for (int i = 0; i < answer.length; i++) {
-            answer[i] = list.get(i);
-        }
-
-        return answer;
+        return list.stream().mapToInt(Integer::intValue).toArray();
     }
 }

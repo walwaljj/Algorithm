@@ -24,7 +24,6 @@ public class Baekjoon11724 {
     static int vertex, edge, cnt;
 
     static List<List<Integer>> list;
-    static int [][] arr;
     static boolean[] chk;
     public static void main(String[] args) throws IOException {
 
@@ -35,7 +34,6 @@ public class Baekjoon11724 {
         edge = Integer.parseInt(st.nextToken());
 
         list = new ArrayList<>();
-        arr = new int [vertex+1][vertex+1];
         chk = new boolean[vertex + 1];
 
         for (int i = 0; i <= vertex; i++) {
@@ -48,8 +46,6 @@ public class Baekjoon11724 {
             int leftNode  = Integer.parseInt(info.nextToken());
             int rightNode  = Integer.parseInt(info.nextToken());
             list.get(leftNode).add(rightNode);
-            arr[leftNode][rightNode] = 1;
-            arr[rightNode][leftNode] = 1;
 
         }
 
@@ -67,15 +63,12 @@ public class Baekjoon11724 {
     private static void dfs(int i) {
         if(chk[i]) {return;}
         else{
-        chk[i] = true;
-        for (int j = 1; j <= vertex; j++) {
-//        for (int j = 1; j <= vertex; j++) {
-//            if (arr[i][j] == 1) {
-            if(list.get(i).contains(j)){
-                dfs(j);
+            chk[i] = true;
+            for (int j = 1; j <= vertex; j++) {
+                if(list.get(i).contains(j)){
+                    dfs(j);
+                }
             }
         }
-        }
-
     }
 }

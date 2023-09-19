@@ -17,23 +17,28 @@ public class Baekjoon1978 {
         String[] str = br.readLine().split(" ");
         Baekjoon1978 bj = new Baekjoon1978();
         int cnt = 0;
+
         for (int i = 0; i < len; i++) {
             int num = Integer.parseInt(str[i]);
+
             if(bj.isPrime(num)){
                 cnt++;
             }
+
         }
 
         System.out.println(cnt);
     }
 
     public boolean isPrime(int num){
-        boolean result = false;
+        if(num == 1){
+            return false;
+        }
         for (int i = 2; i < num; i++) {
             if(num % i == 0){
-                break;
+                return false;
             }
         }
-        return result;
+        return true;
     }
 }

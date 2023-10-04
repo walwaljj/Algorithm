@@ -8,11 +8,15 @@ import java.util.stream.Collectors;
  * 더 맵게
  */
 public class Lessons42626 {
-//    PriorityQueue
+
     public static int solution(int[] scoville, int K) {
         int answer = 0, next, min, mix = 0;
 
         PriorityQueue<Integer> pq = new PriorityQueue<>(Arrays.stream(scoville).boxed().collect(Collectors.toList()));
+
+        if(pq.peek() >= K){
+            return 0;
+        }
 
         while ( pq.size() >=2 ){
 
@@ -21,13 +25,17 @@ public class Lessons42626 {
 
             mix = min + (next * 2);
 
-            pq.offer(mix);
+            if(mix >= K && answer == 0){
+                return answer;
+            }
 
-            answer ++;
+            pq.offer(mix);
 
             if(pq.peek() >= K){
                 return answer;
             }
+
+            answer ++;
 
         }
 
@@ -42,6 +50,7 @@ public class Lessons42626 {
 
     public static void main(String[] args) {
         System.out.println(solution(new int[]{0,1, 2},1));
+//        System.out.println(solution(new int[]{7},7));
 
     }
 }
